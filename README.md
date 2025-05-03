@@ -1,4 +1,5 @@
 # Telegram LOG
+cheatglobal.com | cheatglobal.com/members/twixx.64436/
 
 Bu bot, belirtilen Telegram kanallarından .txt dosyalarını otomatik olarak indirmenizi sağlayan bir tooldur.
 
