@@ -177,7 +177,6 @@ async def init_db():
         raise e
 
 async def is_file_downloaded(message_id):
-    """Dosyanın daha önce indirilip indirilmediğini kontrol et"""
     try:
         async with aiosqlite.connect(DB_PATH) as db:
             cursor = await db.execute('SELECT filename FROM downloaded_files WHERE message_id = ?', (message_id,))
@@ -188,7 +187,6 @@ async def is_file_downloaded(message_id):
         return False
 
 async def mark_as_downloaded(message_id, filename, channel_id, file_size, file_path):
-    """Dosyayı indirildi olarak işaretle"""
     try:
         async with aiosqlite.connect(DB_PATH) as db:
             await db.execute('''
