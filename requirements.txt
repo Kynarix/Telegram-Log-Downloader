@@ -1,0 +1,10 @@
+telethon
+fastapi
+uvicorn
+schedule
+python-dotenv
+rich>=13.7.0
+tqdm
+aiofiles
+aiohttp
+aiosqlite 
